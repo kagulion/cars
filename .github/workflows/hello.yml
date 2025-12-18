@@ -1,0 +1,9 @@
+name: hello-world                  # Название workflow
+on: push                           # Запускать при каждом пуше в репозиторий
+
+jobs:                              # Задания
+  my-job:                          # Название задания
+    runs-on: ubuntu-latest         # Запускать на последней Ubuntu
+    steps:                         # Шаги задания
+      - name: Print greeting       # Название шага
+        run: echo "Hello, World!"  # Команда для выполнения
